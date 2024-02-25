@@ -5,8 +5,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog specific page</title>
-    <link href='css/index.css' rel='stylesheet' />
+    <title>Blog page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href='css/blog_specific.css' rel='stylesheet' />
     <!-- Hotjar Tracking Code for project_exam_1 -->
     <script>
         (function (h, o, t, j, a, r) {
@@ -21,15 +23,45 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1>Blog specific page</h1>
-    </div>
 
-    <div class="blogSpecific">
+    <header>
 
-    </div>
-    <script src="js/components/errorMessage.js"></script>
-    <script src="js/blogSpecific.js"></script>
+        <div class="menu-wrapper">
+            <input type="checkbox" id="checkbox-menu">
+            <label for="checkbox-menu" class="menu-icon"><i class="fa fa-bars"></i></i></label>
+            <a href="/index.html" class="nav-logo">Foodpassion</a>
+            <a href="/index.html" class="nav-logo-mobile">Foodpassion</a>
+
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav">Home</a></li>
+                <li><a href="list_of_blogs.html" class="nav">Blogs</a></li>
+                <li><a href="about.html" class="nav">About</a></li>
+                <li><a href="contact.html" class="nav">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <main>
+
+        <div class="blogSpecific">
+
+        </div>
+        <script src="js/components/errorMessage.js"></script>
+        <script src="js/blogSpecific.js"></script>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="index.html" class="nav">Home</a></li>
+            <li><a href="list_of_blogs.html" class="nav">Blogs</a></li>
+            <li><a href="about.html" class="nav">About</a></li>
+            <li><a href="contact.html" class="nav">Contact</a></li>
+        </ul>
+        <p>Copyright &copy; Foodpassion</p>
+    </footer>
 </body>
+
 
 </html>
