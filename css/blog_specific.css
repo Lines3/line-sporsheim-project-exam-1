@@ -125,11 +125,7 @@ footer li:hover {
         color: black;
     }
 
-    button:hover {
-        background-color: blueviolet;
-    }
-
     body {
         margin: 1.5rem;
-        ;
     }
+}
