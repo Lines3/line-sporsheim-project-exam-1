@@ -1,229 +1,184 @@
 html {
-    /* overflow-x: hidden; */
-    /* scroll-behavior: smooth; */
+    font-family: QuickSand, verdana, sans-serif;
+    background-color: rgb(220, 241, 233);
 }
 
 body {
     max-width: 100%;
-    min-height: 100vh;
-    display: flex;
 }
-
-/* #checkbox-menu:checked~nav,
-nav a,
-nav {
-    display: block;
-} */
 
 #checkbox-menu,
-.nav_logo {
+.nav-logo {
     display: none;
+
 }
 
+a.nav-logo,
+a.nav-logo-mobile {
+    font-family: lobster, sans-serif;
+    font-size: 2.5rem;
+    color: rgb(0, 0, 0);
+}
 
-
-nav a,
-.nav_logo_mobile,
 a,
 .nav {
     text-decoration: none;
-}
-
-nav a:hover {
-    /* cursor: pointer;
-    color: #1e1eef font-weight: bold;
-    transition: 0.3s; */
-}
-
-.nav_logo {
-    /* font-weight: bold; */
-}
-
-a.nav_logo_mobile {
-    display: none;
-}
-
-.nav_logo_mobile {
-
-    /* color: #1a25c5 */
+    color: black;
 }
 
 nav ul {
-    display: block;
+    list-style: none;
+    display: inline-block;
 }
+
+nav li {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+nav li:hover {
+    text-decoration: underline rgb(120, 182, 168);
+}
+
+.fa {
+    float: right;
+}
+
+.active-nav {
+    text-decoration: underline rgb(16, 55, 41);
+}
+
+/* spesifikt for side */
 
 .container {
     width: 100%;
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 .card {
 
-    margin-top: 350px;
-
+    margin-top: 50px;
+    max-width: 100%;
 }
 
 
 h1 {
     text-align: center;
     font-size: 3rem;
-    color: brown;
+}
 
+.wp-block-heading {
+    text-align: center;
+}
+
+.wp-image-102,
+.wp-image-104,
+.wp-image-106,
+.wp-image-108,
+.wp-image-36,
+.wp-image-111,
+.wp-image-113,
+.wp-image-115,
+.wp-image-19,
+.wp-image-16 {
+    height: auto;
+    width: 110%;
+    border-radius: 10%;
 }
 
 
 .intro-paragraph,
 .directions,
 .ul,
-li,
-{
-/* display: none; */
+.recipe-list,
+h3 {
+    display: none;
 }
 
 
-.blogPosts {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 0.5rem;
-    margin-top: 100px;
-}
 
+/* ta med på alle sider */
 
 .error {
     color: rgb(192, 0, 0);
     border: solid;
     padding: 0.1rem;
     text-align: center;
+    font-size: 1rem;
 }
 
+footer {
+    margin-bottom: 2.5rem;
+}
+
+footer li {
+    list-style: none;
+    margin-top: 0.4rem;
+
+}
+
+footer li:hover {
+    text-decoration: underline rgb(120, 182, 168);
+}
+
+
+/* ta med på alle sider */
 
 
 @media only screen and (min-width: 600px) {
 
     .menu-icon,
-    .nav_logo_mobile {
+    .nav-logo-mobile {
         display: none;
     }
-}
 
-
-#checkbox-menu:checked~nav,
-nav a,
-nav {
-    display: block;
-}
-
-#checkbox-menu,
-{
-display: none;
-}
-
-.fa {
-    /* padding: 10px; */
-}
-
-nav a {
-    /* text-decoration: none;
-    color: rgb(255, 255, 255);
-    padding: 10px;
-    margin-top: 60px;
-    font-weight: bold; */
-}
-
-nav a:hover {
-    /* cursor: pointer;
-    color: #3E9730;
-    font-weight: bold;
-    transition: 0.3s; */
-}
-
-.nav_logo {
-    /* display: none;
-    font-weight: bold; */
-}
-
-nav {}
-
-.nav_logo_mobile {
-    text-align: center;
-    text-decoration: none;
-    color: #3E9730;
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.4);
-}
-
-main {
-    /* margin: 1.5em; */
-}
-
-main,
-footer {
-    /* padding: 20px; */
-}
-
-.header {}
-
-a {}
-
-
-footer {
-    /* margin: 20px;
-    border-top: solid #1465DD; */
-}
-
-@media only screen and (min-width: 600px) {
-
-    .menu-icon,
-    .nav_logo_mobile {
-        /* display: none; */
-    }
-
-    nav {
-        position: static;
+    .nav-logo {
         display: block;
     }
 
-    nav a {
-        /* color: rgb(0, 0, 0); */
+    nav ul {
+        display: flex;
+
     }
 
-}
+    nav li:hover {
+        text-decoration: underline rgb(120, 182, 168);
+    }
 
-nav ul {
-    display: flex;
-}
+    .active-nav {
+        text-decoration: underline rgb(16, 55, 41);
+    }
 
-nav li {
-    font-size: 2vw;
-    list-style: none;
-    float: right;
-    padding: 1.5rem;
-}
+    a {
+        color: black;
+    }
 
-nav a:hover,
-a:hover {
-    /* cursor: pointer;
-        color: #3E9730;
-        font-weight: bold;
-        transition: 0.3s; */
-}
+    button:hover {
+        background-color: blueviolet;
+    }
 
-.nav_logo {
-    color: #236718;
-    float: left;
-    max-width: 140px;
-    font-size: 25px;
-    display: block;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.4);
-}
+    body {
+        margin: 1.5rem;
+        ;
+    }
 
-.header {
-    /* margin-top: 4.5em; */
-}
+    /* spesifikt for side */
 
-footer {
-    /* margin: 20px;
-        border-top: solid #1465DD; */
-}
+    .blogPosts {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0.5rem;
+        margin-top: 100px;
+    }
+
+    .intro-paragraph,
+    .recipe-list,
+    h3,
+    .directions {
+        display: none;
+    }
+
+    .wp-block-heading:hover {
+        text-decoration: underline rgb(120, 182, 168);
+    }
 }
