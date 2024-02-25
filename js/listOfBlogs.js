@@ -16,12 +16,12 @@ async function fetchBlogs() {
         console.log(json);
 
         blogs.forEach(function (blog) {
-            resultsContainer.innerHTML += `<a href="blog_specific.html?id=${blog.id.rendered}" class="card">
+            resultsContainer.innerHTML += `<a href="blog_specific.html?id=${blog.title.rendered}&${blog.date}" class="card">
                                                 
-                                                <div class="details">
-                                                <h4 class="id">${blog.content.rendered}</h4>
-                                                </div>
-                                                </a>`;
+                                            <div class="details">
+                                            <div class="content">${blog.content.rendered}</div>
+                                            </div>
+                                            </a>`;
 
         })
     }
