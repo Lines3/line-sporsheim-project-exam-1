@@ -82,6 +82,7 @@ form {
     padding: 2rem;
     padding-right: 3rem;
     margin-bottom: 5rem;
+    max-width: 100%;
 }
 
 button {
@@ -122,5 +123,9 @@ footer li:hover {
 
     nav ul {
         display: flex;
+    }
+
+    form {
+        max-width: 50%;
     }
 }
