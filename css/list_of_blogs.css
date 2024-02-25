@@ -48,8 +48,6 @@ nav li:hover {
     text-decoration: underline rgb(16, 55, 41);
 }
 
-/* spesifikt for side */
-
 .container {
     width: 100%;
     margin-top: 100px;
@@ -95,10 +93,6 @@ h3 {
     display: none;
 }
 
-
-
-/* ta med på alle sider */
-
 .error {
     color: rgb(192, 0, 0);
     border: solid;
@@ -120,10 +114,6 @@ footer li {
 footer li:hover {
     text-decoration: underline rgb(120, 182, 168);
 }
-
-
-/* ta med på alle sider */
-
 
 @media only screen and (min-width: 600px) {
 
@@ -153,16 +143,9 @@ footer li:hover {
         color: black;
     }
 
-    button:hover {
-        background-color: blueviolet;
-    }
-
     body {
         margin: 1.5rem;
-        ;
     }
-
-    /* spesifikt for side */
 
     .blogPosts {
         display: grid;
