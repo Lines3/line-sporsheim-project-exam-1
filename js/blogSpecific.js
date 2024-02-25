@@ -31,7 +31,8 @@ async function getBlog() {
 getBlog();
 
 function createHTML(specificBlog) {
-    blogSpecificContainer.innerHTML = `<div class="blogSpecific"${specificBlog.content.rendered}</div>`
+    blogSpecificContainer.innerHTML = `<h2>${specificBlog.title.rendered}</h2>
+                                        <div class="blogSpecific"${specificBlog.content.rendered}</div>`
 
 
 }
