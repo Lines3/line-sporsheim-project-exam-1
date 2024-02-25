@@ -1,4 +1,4 @@
-const url = "http://localhost/project-exam-1/wp-json/wp/v2/posts?_embed";
+const url = "https://linestudent.no/project-exam-1/wp-json/wp/v2/posts?_embed";
 const resultsContainer = document.querySelector(".blogPosts");
 
 async function fetchBlogs() {
