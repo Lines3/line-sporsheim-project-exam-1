@@ -5,7 +5,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test List of blogs</title>
+    <title>List of blogs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link href='css/list_of_blogs.css' rel='stylesheet' />
     <!-- Hotjar Tracking Code for project_exam_1 -->
     <script>
@@ -23,38 +25,53 @@
 <body>
 
     <header>
+
         <div class="menu-wrapper">
-            <input type="checkbox" id="checkbox-menu" />
-            <label for="checkbox-menu" class="menu-icon"><i class="fa fa-bars"></i></label>
-            <a href="/index.html" class="nav_logo">Foodpassion</a>
-            <nav>
-                <ul>
-                    <li><a href="/about.html" class="nav">About</a></li>
-                    <li><a href="/contact.html" class="nav">Contact</a></li>
-                    <li><a href="/list_of_blogs.html" class="nav">List of blogs</a></li>
-                    <li><a href="/index.html" class="nav">Home</a></li>
-                </ul>
-            </nav>
+            <input type="checkbox" id="checkbox-menu">
+            <label for="checkbox-menu" class="menu-icon"><i class="fa fa-bars"></i></i></label>
+            <a href="/index.html" class="nav-logo">Foodpassion</a>
+            <a href="/index.html" class="nav-logo-mobile">Foodpassion</a>
 
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav">Home</a></li>
+                <li class="active-nav"><a href="list_of_blogs.html" class="nav">Blogs</a></li>
+                <li><a href="about.html" class="nav">About</a></li>
+                <li><a href="contact.html" class="nav">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
     </header>
+    <main>
 
+        <div class="container">
+            <h1>Blogs</h1>
+        </div>
+        <div class="blogPosts" id="blogPosts">
 
-    <div class="container">
-        <h1>List of blogs</h1>
-    </div>
-    <div class="blogPosts" id="blogPosts">
+        </div>
+        <div class="blogLink" id="blogLink">
 
-    </div>
-    <div class="blogLink" id="blogLink">
+        </div>
 
-    </div>
+        <div class="blogImg" id="blogImg">
 
-    <div class="blogImg" id="blogImg">
+        </div>
 
-    </div>
-
-    <script src="js/components/errormessage.js"></script>
-    <script src="js/listOfBlogs.js"></script>
+        <script src="js/components/errorMessage.js"></script>
+        <script src="js/listOfBlogs.js"></script>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="index.html" class="nav">Home</a></li>
+            <li><a href="list_of_blogs.html" class="nav">Blogs</a></li>
+            <li><a href="about.html" class="nav">About</a></li>
+            <li><a href="contact.html" class="nav">Contact</a></li>
+        </ul>
+        <p>Copyright &copy; Foodpassion</p>
+    </footer>
 </body>
 
 </html>
