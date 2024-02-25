@@ -1,0 +1,127 @@
+html {
+    font-family: QuickSand, verdana, sans-serif;
+    background: rgb(245, 245, 245);
+}
+
+body {
+    max-width: 100%;
+}
+
+/* #checkbox-menu:checked~nav,
+nav a,
+nav {
+    display: block;
+} */
+
+#checkbox-menu,
+.nav-logo {
+    display: none;
+}
+
+.nav-logo-mobile {
+    display: block;
+}
+
+nav a,
+.nav-logo-mobile,
+a,
+.nav {
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: inline-block;
+    color: red;
+}
+
+nav li {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+nav li:hover {
+    text-decoration: underline rgb(177, 19, 19);
+}
+
+.fa {
+    float: right;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+}
+
+input {
+    display: block;
+    margin-top: 5px;
+    width: 100%;
+    padding: 0.5rem;
+
+}
+
+.formError {
+    display: none;
+    color: rgb(255, 0, 0);
+    font-size: 1rem;
+    margin-top: 0.2rem;
+
+
+}
+
+form {
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    background: rgb(196, 233, 226);
+    padding: 2rem;
+    padding-right: 3rem;
+
+}
+
+button {
+    padding: 0.2rem;
+    margin-top: 1rem;
+    background: rgb(74, 131, 117);
+    color: rgb(245, 245, 245);
+}
+
+button:hover {
+    background-color: blueviolet;
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 600px) {
+
+    .menu-icon,
+    .nav-logo-mobile {
+        display: none;
+    }
+
+    .nav-logo {
+        display: block;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+
+    }
+
+    nav li:hover {
+        text-decoration: underline rgb(177, 19, 19);
+    }
+
+    a {
+        color: brown;
+    }
+
+    button:hover {
+        background-color: blueviolet;
+    }
+}
