@@ -1,38 +1,33 @@
 html {
     font-family: QuickSand, verdana, sans-serif;
-    background: rgb(245, 245, 245);
+    background-color: rgb(220, 241, 233);
 }
 
 body {
     max-width: 100%;
 }
 
-/* #checkbox-menu:checked~nav,
-nav a,
-nav {
-    display: block;
-} */
-
 #checkbox-menu,
 .nav-logo {
     display: none;
 }
 
-.nav-logo-mobile {
-    display: block;
+a.nav-logo,
+a.nav-logo-mobile {
+    font-family: lobster, sans-serif;
+    font-size: 2.5rem;
+    color: rgb(0, 0, 0);
 }
 
-nav a,
-.nav-logo-mobile,
 a,
 .nav {
     text-decoration: none;
+    color: rgb(0, 0, 0);
 }
 
 nav ul {
     list-style: none;
     display: inline-block;
-    color: red;
 }
 
 nav li {
@@ -41,11 +36,15 @@ nav li {
 }
 
 nav li:hover {
-    text-decoration: underline rgb(177, 19, 19);
+    text-decoration: underline rgb(120, 182, 168);
 }
 
 .fa {
     float: right;
+}
+
+.active-nav {
+    text-decoration: underline rgb(16, 55, 41);
 }
 
 label {
@@ -61,22 +60,28 @@ input {
 
 }
 
+.error {
+    color: rgb(192, 0, 0);
+    border: solid;
+    padding: 0.1rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
 .formError {
     display: none;
-    color: rgb(255, 0, 0);
-    font-size: 1rem;
-    margin-top: 0.2rem;
-
-
+    color: rgb(210, 1, 1);
+    padding: 0.1rem;
+    font-weight: 700;
 }
 
 form {
     border-style: solid;
     border-color: rgb(0, 0, 0);
-    background: rgb(196, 233, 226);
+    background: rgb(215, 226, 224);
     padding: 2rem;
     padding-right: 3rem;
-
+    margin-bottom: 5rem;
 }
 
 button {
@@ -87,14 +92,22 @@ button {
 }
 
 button:hover {
-    background-color: blueviolet;
+    background-color: rgb(24, 113, 86);
 }
 
+footer {
+    margin-bottom: 2.5rem;
+}
 
+footer li {
+    list-style: none;
+    margin-top: 0.4rem;
 
+}
 
-
-
+footer li:hover {
+    text-decoration: underline rgb(120, 182, 168);
+}
 
 @media only screen and (min-width: 600px) {
 
@@ -108,20 +121,6 @@ button:hover {
     }
 
     nav ul {
-        list-style: none;
         display: flex;
-
-    }
-
-    nav li:hover {
-        text-decoration: underline rgb(177, 19, 19);
-    }
-
-    a {
-        color: brown;
-    }
-
-    button:hover {
-        background-color: blueviolet;
     }
 }
